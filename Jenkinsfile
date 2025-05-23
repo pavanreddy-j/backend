@@ -36,6 +36,11 @@ pipeline {
                }
             }
         }
+        stage('Run Docker') {
+            steps {
+                echo dkr
+            }
+        }
         stage('Docker Build') {
             steps {
                script{
